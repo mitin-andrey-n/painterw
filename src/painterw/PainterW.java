@@ -447,6 +447,7 @@ public class PainterW extends javax.swing.JFrame {
       pcanvas.setFirstRun(false);
       pcanvas.repaint();
       tbtSelectLine.setSelected(false);
+      txfStatus.setText("");
     }
   }//GEN-LAST:event_cmbWidthActionPerformed
 
