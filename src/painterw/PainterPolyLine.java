@@ -67,7 +67,7 @@ public class PainterPolyLine implements Serializable{
       ac = (int) sqrt(pow(x - px1, 2.0) + pow(y - py1, 2.0));
       bc = (int) sqrt(pow(px2 - x, 2.0) + pow(py2 - y, 2.0));
       //z = "ab=" + ab + "  ac=" +ac + "  bc=" + bc + "  -  " + (ac+bc);
-      if( ac + bc == ab ){
+      if( abs( (ac + bc) - ab ) < 2){
         if(insert_point){
           point = new PainterPoint(x, y, w, c);
           points.add(i , point );
